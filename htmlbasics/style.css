@@ -1,0 +1,33 @@
+/* Assignment 7 CSS - the styles provided in the assignment, with 3 changes of my own. */
+
+/* Change 1: headings from purple to green */
+h1, h2 {
+  color: green;
+}
+
+p {
+  color: gray;
+}
+
+/* Change 2: thicker border on the unordered list (was 2px) */
+ul {
+  border: 4px solid orange;
+}
+
+ol {
+  border: 2px solid purple;
+}
+
+/* Change 3: more padding inside the lists (was 5px 20px) */
+ol, ul {
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+h1, strong {
+  color: green;
+}
+
+em {
+  color: gray;
+}
