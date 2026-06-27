@@ -39,7 +39,8 @@ body {
 
 /* || Typography */
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
   color: var(--green-deep);
   line-height: 1.15;
 }
