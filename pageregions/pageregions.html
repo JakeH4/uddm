@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>GeoGuessr Page Regions</title>
+    <title>Birdwatching</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
 
     <!----- Link to the style sheet --------->
@@ -21,16 +21,16 @@
 
       <!-- ===== HEADER (site-wide banner: title, logo, nav) ===== -->
       <header role="banner">
-        <h1>GeoGuessr</h1>
-        <img src="geoguessr-map.svg" alt="A globe with a pin on it">
+        <h1>Birdwatching</h1>
+        <img src="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/dove.png" alt="a simple dove logo">
 
         <!-- ===== NAVIGATION MENU ===== -->
         <nav role="navigation">
           <ul>
             <li><span>Home</span></li>
             <li><a href="#">Get started</a></li>
-            <li><a href="#">Maps</a></li>
-            <li><a href="#">Meta</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Gear</a></li>
             <li><a href="#">Forum</a></li>
           </ul>
         </nav>
@@ -39,53 +39,35 @@
       <!-- ===== MAIN CONTENT ===== -->
       <main role="main">
 
-        <!-- ===== The primary article (welcome / main read) ===== -->
+        <!-- ===== Welcome text (the primary article) ===== -->
         <article>
           <h2>Welcome</h2>
 
-          <p>I play a lot of <a href="https://www.geoguessr.com/">GeoGuessr</a>. It drops you into a random Google Street View somewhere in the world, and you have to figure out where you are and drop a pin on the map. The closer your pin, the more points you score, up to 5000 a round.</p>
+          <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
 
-          <p>I've put enough hours into it that I'm decent now. I can usually name the country in the first few seconds, and on a lot of rounds I get the region or even the road. A big part of getting better was studying <a href="https://www.plonkit.net/">PlonkIt</a>, which has country-by-country guides that cover the things that give a location away.</p>
-
-          <h3>What I actually look at</h3>
-
-          <ul>
-            <li>Driving side. The left side cuts the world down to a shorter list of countries.</li>
-            <li>Road lines and bollards. The center line colors and the posts along the road are specific to each country.</li>
-            <li>The Google car. Camera generation, car color, and the antenna can point you to one country.</li>
-            <li>License plates and signs. Plate shapes and colors, plus any text, usually confirm it.</li>
-            <li>Landscape and sun. Vegetation and soil narrow the region, and the sun's position helps with the hemisphere.</li>
-          </ul>
-
-          <h3>Getting better</h3>
-
-          <p>What moved me from guessing countries to placing pins close was learning the meta from PlonkIt and playing a lot of rounds, mostly duels. By now, when I drop in, I'm not really guessing, I'm reading the clues. The rounds that still get me are the empty ones with no roads, signs, or cars, where you go off the vegetation and a gut feeling.</p>
+          <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
         </article>
 
-        <!-- ===== Complementary sidebar (extra trivia, not the main read) ===== -->
+        <!-- ===== Image sidebar (complementary content) ===== -->
         <aside role="complementary">
-          <h2>The niche stuff</h2>
+          <h2>Favourite photos</h2>
 
-          <p>The deeper you go, the more it comes down to small regional details. A lot of them are poles and roadside markers. A few I can name on sight:</p>
+          <h3>North American Birds</h3>
+          <a href="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-1.jpg"><img src="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
+          <a href="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-2.jpg"><img src="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
 
-          <h3>Power poles</h3>
-          <ul>
-            <li>Stobie poles, the concrete and steel power poles you mostly see in South Australia.</li>
-            <li>Octagonal concrete poles, a giveaway for Mexico.</li>
-            <li>The diagonal yellow and black striped poles in Taiwan.</li>
-          </ul>
-
-          <h3>Roadside markers</h3>
-          <ul>
-            <li>Ecuadorian crosses on the side of the road.</li>
-          </ul>
+          <h3>South American Birds</h3>
+          <a href="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-3.jpg"><img src="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored beak, links to larger version of the image"></a>
+          <a href="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-4.jpg"><img src="https://raw.githubusercontent.com/hkramer/atlas-csci-3150/main/lab2-page-structure/images/favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
         </aside>
 
       </main>
 
       <!-- ===== FOOTER (site info / credits) ===== -->
       <footer role="contentinfo">
-        <p>&copy; 2026 GeoGuessr fan page. For educational use.</p>
+        <p>This fake website example is CC0 &mdash; any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
+
+        <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
       </footer>
 
     </div>
