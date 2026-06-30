@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-label="Stylized globe with a red location pin marking a guessed spot">
+  <!-- globe -->
+  <circle cx="195" cy="165" r="120" fill="#d4ecf7"/>
+  <line x1="87" y1="115" x2="303" y2="115" stroke="#9bc4dd" stroke-width="2"/>
+  <line x1="75" y1="165" x2="315" y2="165" stroke="#9bc4dd" stroke-width="2"/>
+  <line x1="87" y1="215" x2="303" y2="215" stroke="#9bc4dd" stroke-width="2"/>
+  <ellipse cx="195" cy="165" rx="42" ry="120" fill="none" stroke="#9bc4dd" stroke-width="2"/>
+  <ellipse cx="195" cy="165" rx="84" ry="120" fill="none" stroke="#9bc4dd" stroke-width="2"/>
+  <line x1="195" y1="45" x2="195" y2="285" stroke="#9bc4dd" stroke-width="2"/>
+  <circle cx="195" cy="165" r="120" fill="none" stroke="#2c5d7c" stroke-width="3"/>
+  <!-- location pin -->
+  <polygon points="250,116 296,116 273,158" fill="#e8503a"/>
+  <circle cx="273" cy="96" r="30" fill="#e8503a" stroke="#a8301d" stroke-width="2"/>
+  <circle cx="273" cy="94" r="12" fill="#ffffff"/>
+</svg>

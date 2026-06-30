@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ===== 1. General setup ===== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;            /* makes rem easy: 1.6rem = 16px */
+  background-color: #dfe7e3;  /* soft color behind the page */
+}
+
+body {
+  width: 70%;
+  min-width: 800px;           /* NOTE: this is what breaks on small screens; we fix it in Step 3 */
+  margin: 0 auto;             /* centers the page */
+  background-color: #ffffff;
+}
+
+/* ===== 2. Typography (uses the two Google fonts) ===== */
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+}
+
+p, li, span, a {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* ===== 3. Header + nav (FLEXBOX) ===== */
+
+header {
+  padding: 1rem;
+  background-color: #b5cabb;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;             /* center the logo */
+  height: 60px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;              /* FLEXBOX: lay the menu items out in a row */
+  justify-content: space-around;
+}
+
+nav a, nav span {
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+/* ===== 4. Main content (CSS GRID: two columns) ===== */
+
+main {
+  display: grid;                    /* GRID */
+  grid-template-columns: 3fr 1fr;   /* wide article + narrow sidebar */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+article, aside {
+  background-color: #eef3f0;
+  padding: 1rem;
+}
+
+aside img {
+  display: block;
+  max-width: 100%;            /* thumbnails never overflow their column */
+  margin-bottom: 1rem;
+}
+
+/* ===== 5. Footer ===== */
+
+footer {
+  padding: 1rem;
+  background-color: #b5cabb;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+/* ===== 6. Media queries (RESPONSIVE) ===== */
+
+/* --- Below 900px: stack the two columns into one --- */
+@media (max-width: 900px) {
+
+  body {
+    width: auto;       /* let the page fill the screen... */
+    min-width: 0;      /* ...and stop forcing 800px (no more horizontal scroll) */
+    margin: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr;   /* one column: article on top, sidebar below */
+  }
+
+}
+
+/* --- Below 640px: stack the nav menu vertically too --- */
+@media (max-width: 640px) {
+
+  nav ul {
+    flex-direction: column;   /* menu items go top-to-bottom instead of side-by-side */
+  }
+
+  nav a, nav span {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;   /* shrink the big title so it fits a phone screen */
+  }
+
+}
