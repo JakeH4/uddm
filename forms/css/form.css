@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+/* form styling */
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+
+
+/* line up the input fields by giving every label the same width.
+   width is ignored on inline elements, so make the label inline-block. */
+label {
+	margin-right: .3em;
+	width: 7em;
+	display: inline-block;
+	text-align: right;
+}
+
+/* remove the bullet points from the label/field list items.
+   scoped to #formcol1 so only the top (text-field) section is affected. */
+#formcol1 li {
+	list-style: none;
+}
+
+/* instructions line at the top of the form */
+#form-instructions {
+	max-width: 32em;
+	margin-bottom: 1em;
+}
+
+/* asterisk marking required fields */
+.req-star {
+	color: #B00020;
+	font-weight: bold;
+}
+
+/* colored background is a second (non-color-only) cue for required fields */
+#formcol1 input.reqfield {
+	background: #FF9;
+}
+
+/* the label width rule above also stretched the radio labels, pushing the
+   two choices far apart. Let the radio labels size to their text and sit close. */
+#multchoice label {
+	width: auto;
+	margin-right: 1.5em;
+	text-align: left;
+}
+
+/* highlight the current keyboard/mouse focus so users can always see where
+   they are as they tab through the form. White text on dark red passes the
+   WCAG AA contrast ratio. */
+select:focus, select:active,
+input:focus, input:active,
+input:focus + label, input:active + label,
+label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #B00020 !important;
+}
+
+/* end of form css */
+	
